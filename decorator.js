@@ -6,7 +6,7 @@ class StudyBehavior {
 
 class SimpleStudy extends StudyBehavior {
     study() {
-        return "เข้าเรียน";
+        return "ไม่เข้าเรียน";
     }
 }
 
@@ -23,19 +23,19 @@ class StudyDecorator extends StudyBehavior {
 
 class ConcentratedStudy extends StudyDecorator {
     study() {
-        return super.study() + " ตั้งใจเรียน";
+        return super.study() + " รวย";
     }
 }
 
 class GoodGrade extends ConcentratedStudy {
     study() {
-        return super.study() + " ได้เกรดดี";
+        return super.study() + " รวยมาก";
     }
 }
 
 class GoodWork extends ConcentratedStudy {
     study() {
-        return super.study() + " ได้ที่ทำงานดี";
+        return super.study() + " รวยมากมั้ง";
     }
 }
 
